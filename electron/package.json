@@ -1,0 +1,16 @@
+{
+  "name": "international-thanks-strip-cc8ef",
+  "productName": "international-thanks-strip-cc8ef",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "do1ts",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "11.0.0"
+  }
+}
