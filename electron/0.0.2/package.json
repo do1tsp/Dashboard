@@ -1,0 +1,16 @@
+{
+  "name": "smoggy-trains-clap-evnnd",
+  "productName": "smoggy-trains-clap-evnnd",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "do1ts",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "11.0.0"
+  }
+}

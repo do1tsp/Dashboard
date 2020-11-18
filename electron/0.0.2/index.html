@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home | Dashboard</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+
+	<div class="wrapper">
+		<aside class="main-sidebar sidebar-dark-primary elevation-4">
+			<!-- Sidebar -->
+			<div class="sidebar">
+				<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+					<div class="image">
+						<img src="user.jpeg" class="img-circle elevation-2" alt="User Image">
+      </div>
+						<div class="info">
+							<a>Tobias Später</a>
+						</div>
+					</div>
+					<nav class="mt-2">
+						<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+							data-accordion="false">
+								<li class="nav-item">
+								<a href="#" class="nav-link" onclick="content('Home');">
+									<i class="nav-icon fas fa-tachometer-alt"></i>
+									<p>Home
+										<i class="right fas fa-angle-left"></i>
+									</p>
+								</a>
+							</li>
+              <li class="nav-item">
+								<a href="#" class="nav-link" onclick="content('Dashboard');">
+									<i class="nav-icon fas fa-tachometer-alt"></i>
+									<p>Dashboard
+										<i class="right fas fa-angle-left"></i>
+									</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" onclick="content('Server');">
+									<i class="nav-icon fas fa-tachometer-alt"></i>
+									<p>
+										Server
+										<i class="right fas fa-angle-left"></i>
+									</p>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- /.sidebar-menu -->
+				</div>
+				<!-- /.sidebar -->
+		</aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<section class="content-header">
+				<div class="container-fluid">
+					<div class="row mb-2">
+						<div class="col-sm-6">
+							<h1 id="content-title">Home</h1>
+						</div>
+						<div class="col-sm-6">
+							<ol class="breadcrumb float-sm-right">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item active" id="content-breadcrumb"> Home</li>
+							</ol>
+						</div>
+					</div>
+				</div><!-- /.container-fluid -->
+			</section>
+
+			<!-- Main content -->
+			<section class="content" id="content-inner">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="sticky-top mb-3">
+							</div>
+						</div>
+						<!-- /.col -->
+						<div class="col-md-9">
+							<div class="card card-primary">
+								<div class="card-body p-0">
+									<!-- THE CALENDAR -->
+									<div id="calendar"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<footer class="main-footer">
+			<div class="float-right d-none d-sm-block">
+				<b>Version</b> 0.0.1
+			</div>
+			<strong>Copyright &copy; 2020 <a>Tobias Später</a>.</strong> All rights reserved.
+		</footer>
+
+		<!-- Control Sidebar -->
+		<aside class="control-sidebar control-sidebar-dark">
+		</aside>
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+
+</html>

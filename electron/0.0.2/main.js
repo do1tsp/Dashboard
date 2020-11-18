@@ -6,7 +6,7 @@ app.whenReady().then(() => {
 
   const template = [
     {
-      label: 'Menü',
+      label: 'Menue',
       submenu: [
         { role: 'Beenden' },
       ]
@@ -19,5 +19,5 @@ app.whenReady().then(() => {
 function content(newContent) {
     document.getElementById("content-title").innerHTML = newContent;
 	document.getElementById("content-breadcrumb").innerHTML = newContent;
-	document.getElementById("content-inner").innerHTML = ("/content.html");
+  document.title = newContent + " | Dashboard";
   }
