@@ -1,8 +1,3 @@
-// Create native application menus and context menus.
-//
-// For more info, see:
-// https://electronjs.org/docs/api/menu
-
 const { app, BrowserWindow, Menu } = require('electron')
 
 app.whenReady().then(() => {
@@ -11,13 +6,18 @@ app.whenReady().then(() => {
 
   const template = [
     {
-      label: 'MenÃ¼',
+      label: 'Menü',
       submenu: [
         { role: 'Beenden' },
       ]
     },
   ]
-
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
 })
+// bei Navigationsclick
+function content(newContent) {
+    document.getElementById("content-title").innerHTML = newContent;
+	document.getElementById("content-breadcrumb").innerHTML = newContent;
+	document.getElementById("content-inner").innerHTML = ("/content.html");
+  }
